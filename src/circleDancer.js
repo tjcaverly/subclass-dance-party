@@ -18,9 +18,6 @@ makeCircleDancer.prototype = Object.create(makeDancer.prototype);
 
 makeCircleDancer.prototype.constructor = makeCircleDancer;
 
-
-makeCircleDancer.prototype.oldStep = makeDancer.prototype.step;
-
 makeCircleDancer.prototype.step = function(){
   // call the old version of step at the beginning of any call to this new version of step
   //debugger;
@@ -31,7 +28,8 @@ makeCircleDancer.prototype.step = function(){
   this.left = posArray[1];
 
   //this.setPosition(this.top, this.left);
-  this.oldStep();
+
+  makeDancer.prototype.step.call(this);
 
 
     // toggle() is a jQuery method to show/hide the <span> tag.

@@ -16,13 +16,11 @@ makeInteractiveDancer.prototype = Object.create(makeDancer.prototype);
 makeInteractiveDancer.prototype.constructor = makeInteractiveDancer;
 
 
-makeInteractiveDancer.prototype.oldStep = makeDancer.prototype.step;
-
 makeInteractiveDancer.prototype.step = function(){
   // call the old version of step at the beginning of any call to this new version of step
   //debugger;
 
-  this.oldStep();
+  makeDancer.prototype.step.call(this);
 
 
 

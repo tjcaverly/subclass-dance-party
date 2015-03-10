@@ -17,7 +17,6 @@ var makeDancer = function(top, left, timeBetweenSteps){
   this.step();
 
 
-  //debugger;
 };
 
   makeDancer.prototype.step = function(){
@@ -54,6 +53,7 @@ var makeDancer = function(top, left, timeBetweenSteps){
     // where it belongs on the page. See http://api.jquery.com/css/
     //
     //this.setPosition(top, left);
+    //debugger;
     var styleSettings = {
       top: top,
       left: left
