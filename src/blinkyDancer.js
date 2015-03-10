@@ -3,9 +3,9 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps){
   makeDancer.call(this, top, left, timeBetweenSteps);
   this.$node.addClass('blinky');
   this.$node.click(function(){
-    debugger;
-    this.css("border-radius", "30px");
-    this.css("border-size", "30px");
+    console.log($(this));
+    $(this).css("border", "30px solid orange");
+    $(this).css("border-radius", "30px");
     //console.log('hi');
   });
   //var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
