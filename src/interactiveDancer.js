@@ -25,7 +25,9 @@ makeInteractiveDancer.prototype.step = function(){
   this.oldStep();
 
 
+
   var moveAwayFrom = this.detectClosest();
+  
   if (moveAwayFrom) {
     this.top += (this.top - moveAwayFrom[0]);
     this.left += (this.left - moveAwayFrom[1]);
@@ -41,6 +43,10 @@ makeInteractiveDancer.prototype.step = function(){
 };
 
 makeInteractiveDancer.prototype.detectClosest = function() {
+
+  if(!window.dancers){
+    return [this.top, this.left];
+  }
 
   var min = Infinity;
   var minLocation;

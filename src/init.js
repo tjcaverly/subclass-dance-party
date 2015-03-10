@@ -1,5 +1,6 @@
 $(document).ready(function(){
   window.dancers = [];
+  $('audio')[0].volume = .25;
 
   $(".addDancerButton").on("click", function(event){
     /* This function sets up the click handlers for the create-dancer

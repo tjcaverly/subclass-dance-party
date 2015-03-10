@@ -1,6 +1,8 @@
 // Creates and returns a new dancer object that can step
 var makeDancer = function(top, left, timeBetweenSteps){
-  window.dancers.push(this);
+  if (window.dancers){
+    window.dancers.push(this);
+  }
   this.top = top;
   this.left = left;
   this.timeBetweenSteps = timeBetweenSteps;
