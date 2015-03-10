@@ -24,6 +24,16 @@ var makeDancer = function(top, left, timeBetweenSteps){
 
     //this.step();
     var self = this;
+    var max = [window.innerHeight, window.innerWidth];
+
+    if (self.top > max[0]){
+      self.top = max[0];
+    }
+    if (self.left > max[1]) {
+      self.left = max[1];
+    }
+
+    self.setPosition(self.top, self.left);
 
     // now that we have defined the dancer object, we can start setting up important parts of it by calling the methods we wrote
     // this one sets the position to some random default point within the body

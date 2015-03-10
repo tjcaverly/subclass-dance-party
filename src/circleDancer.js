@@ -24,13 +24,14 @@ makeCircleDancer.prototype.oldStep = makeDancer.prototype.step;
 makeCircleDancer.prototype.step = function(){
   // call the old version of step at the beginning of any call to this new version of step
   //debugger;
-  this.oldStep();
+
   
   var posArray = this.circleDance();
   this.top = posArray[0];
   this.left = posArray[1];
 
-  this.setPosition(this.top, this.left);
+  //this.setPosition(this.top, this.left);
+  this.oldStep();
 
 
     // toggle() is a jQuery method to show/hide the <span> tag.
@@ -44,7 +45,7 @@ makeCircleDancer.prototype.circleDance = function() {
 
   this.degrees += this.speed;
 
-  return [x,y];
+  return [y, x];
 };
 
 makeCircleDancer.prototype.oldLineUp = makeDancer.prototype.lineUp;
