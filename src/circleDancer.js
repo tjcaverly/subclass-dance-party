@@ -46,3 +46,10 @@ makeCircleDancer.prototype.circleDance = function() {
 
   return [x,y];
 };
+
+makeCircleDancer.prototype.oldLineUp = makeDancer.prototype.lineUp;
+
+makeCircleDancer.prototype.lineUp = function() {
+  this.oldLineUp();
+  this.centerY = 0;
+}

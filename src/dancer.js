@@ -1,6 +1,6 @@
 // Creates and returns a new dancer object that can step
 var makeDancer = function(top, left, timeBetweenSteps){
-
+  window.dancers.push(this);
   this.top = top;
   this.left = left;
   this.timeBetweenSteps = timeBetweenSteps;
@@ -16,9 +16,6 @@ var makeDancer = function(top, left, timeBetweenSteps){
 
 
   //debugger;
-
-
-
 };
 
   makeDancer.prototype.step = function(){
@@ -32,6 +29,12 @@ var makeDancer = function(top, left, timeBetweenSteps){
     // this one sets the position to some random default point within the body
 
     setTimeout(function(){self.step()}, self.timeBetweenSteps);
+  };
+
+  makeDancer.prototype.lineUp = function() {
+    this.left = 0;
+    this.setPosition(this.top, this.left);
+    console.log("Being Called");
   };
 
   makeDancer.prototype.setPosition = function(top, left){

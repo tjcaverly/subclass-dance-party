@@ -30,5 +30,13 @@ $(document).ready(function(){
 
     $('body').append(dancer.$node);
   });
+
+ $(".lineUpButton").on("click", function(event){
+  console.log(window.dancers.length);
+    for (var i = 0; i < window.dancers.length; i++) {
+      window.dancers[i].lineUp();
+    }
+ });
 });
+
 

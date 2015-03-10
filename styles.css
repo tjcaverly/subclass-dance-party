@@ -3,8 +3,10 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image: url('Atoms.jpg');
   font-size: 18px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -26,8 +28,13 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 .blinky{
-  border:10px solid blue;
+  border:20px solid blue;
+  border-radius: 20px;
 }
 .seeSaw{
   border:10px solid green;
+  border-radius: 0px;
+}
+.interactive{
+  border:10px solid purple;
 }

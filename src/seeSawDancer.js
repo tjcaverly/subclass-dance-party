@@ -27,7 +27,6 @@ makeSeeSawDancer.prototype.step = function(){
 
   this.goingForward *= -1;
   this.top += 10 * this.goingForward;
-  console.log(this.top);
   this.setPosition(this.top, this.left);
 
     // toggle() is a jQuery method to show/hide the <span> tag.

@@ -2,6 +2,12 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps){
   //this.oldStep = makeDancer.prototype.step;
   makeDancer.call(this, top, left, timeBetweenSteps);
   this.$node.addClass('blinky');
+  this.$node.click(function(){
+    debugger;
+    this.css("border-radius", "30px");
+    this.css("border-size", "30px");
+    //console.log('hi');
+  });
   //var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
 
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
