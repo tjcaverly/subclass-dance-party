@@ -2,7 +2,7 @@ var makeInteractiveDancer = function(top, left, timeBetweenSteps){
   //this.oldStep = makeDancer.prototype.step;
   makeDancer.call(this, top, left, timeBetweenSteps);
   this.$node.addClass('interactive');
-  this.$node.html("<img src='zoid.png' height=75 width=60>");
+  this.$node.html("<img src='zoid.png' height=75 width=50>");
 
   //var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
 

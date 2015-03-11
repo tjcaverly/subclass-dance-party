@@ -9,7 +9,7 @@ var makeCircleDancer = function(top, left, timeBetweenSteps){
   //this.$node.css("background-image", "url('bender.jpg')");
   //var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
   this.$node.addClass('circle');
-  this.$node.html("<img src='bender.jpg' height=70 width=50>");
+  this.$node.html("<img src='bender.png' height=80 width=65>");
 
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
