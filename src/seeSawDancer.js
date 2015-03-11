@@ -3,6 +3,7 @@ var makeSeeSawDancer = function(top, left, timeBetweenSteps){
   this.goingForward = 1;
   makeDancer.call(this, top, left, timeBetweenSteps);
   this.$node.addClass('seeSaw');
+  this.$node.html("<img src='fry.png' height=80 width=45>");
 
   //var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
 

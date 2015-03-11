@@ -28,13 +28,16 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 .blinky{
-  border:20px solid blue;
-  border-radius: 20px;
+  border:none;
 }
 .seeSaw{
-  border:10px solid green;
+  border:none;
   border-radius: 0px;
 }
 .interactive{
-  border:10px solid purple;
+  border:none;
+}
+
+.circle {
+  border: none;
 }

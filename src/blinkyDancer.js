@@ -2,8 +2,10 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps){
   //this.oldStep = makeDancer.prototype.step;
   makeDancer.call(this, top, left, timeBetweenSteps);
   this.$node.addClass('blinky');
+  this.$node.html("<img src='prof.jpg' height=75 width=60>");
   this.$node.click(function(){
     console.log($(this));
+
     $(this).css("border", "30px solid orange");
     $(this).css("border-radius", "30px");
     //console.log('hi');
